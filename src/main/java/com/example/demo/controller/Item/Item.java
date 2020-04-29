@@ -1,8 +1,35 @@
+/*
+ * @Author: Henry
+ * @Date: 2020-04-22 15:43:30
+ * @LastEditTime: 2020-04-29 16:18:51
+ * @LastEditors: Please set LastEditors
+ * @Description: 英雄使用的物品
+ * @FilePath: \demo\src\main\java\com\example\demo\controller\Item\Item.java
+ */
 package com.example.demo.controller.Item;
+
+import com.example.demo.controller.Hero.*;
 
 public class Item {
     String name;
 	int price;
+
+	public void buy(){
+        System.out.println("购买");
+	}
+	
+    public void effect() {
+        System.out.println("物品使用后，可以有效果 ");
+    }
+     
+    public static void main(String[] args) {
+        Item i1= new LifePotion();
+        Item i2 = new MagicPotion();
+        System.out.print("i1  是Item类型，执行effect打印:");
+        i1.effect();
+        System.out.print("i2  也是Item类型，执行effect打印:");
+        i2.effect();
+    }
 }
 
 class Weapon extends Item{
