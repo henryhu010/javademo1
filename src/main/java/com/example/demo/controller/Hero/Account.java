@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-05-26 09:42:04
- * @LastEditTime: 2020-05-26 16:12:12
+ * @LastEditTime: 2020-05-26 16:21:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \demo\src\main\java\com\example\demo\controller\Hero\Account.java
@@ -28,7 +28,7 @@ public class Account {
             else {
                 balance -= m;
             }
-    }
+        }
 
     static class OverdraftException extends Exception {
         
@@ -56,8 +56,8 @@ public class Account {
                     overdraftProtection = overdraftProtection - (m-balance);
                     balance = 0;
                 }
-        }
-    }
+            }
+        }
     public static void main(final String[] args){
 //        Account account = new Account();
         final CheckingAccount checkingAccount = new CheckingAccount();
@@ -77,5 +77,5 @@ public class Account {
             System.out.println("余额为:" + checkingAccount.balance);
             System.out.println("剩余额度为:" + checkingAccount.overdraftProtection);
         }
-    }
+    }
 }
