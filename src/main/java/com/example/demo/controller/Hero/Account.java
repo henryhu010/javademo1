@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-05-26 09:42:04
- * @LastEditTime: 2020-05-26 16:09:37
+ * @LastEditTime: 2020-05-26 16:12:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \demo\src\main\java\com\example\demo\controller\Hero\Account.java
@@ -10,6 +10,7 @@ package com.example.demo.controller.Hero;
 
 public class Account {
     public double balance;
+
        public Account(){
         balance = 0;
     }
@@ -21,6 +22,7 @@ public class Account {
     public void deposit(final double m){
         balance += m;
     }
+    
     public void withdraw(final double m) throws OverdraftException{
         if(m > balance) throw new OverdraftException("余额不足");
             else {
