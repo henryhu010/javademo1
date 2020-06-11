@@ -10,7 +10,7 @@ package com.example.demo.controller.Hero;
 
 import com.example.demo.controller.Charactor.AD;
 
-public class ADHero extends HeroDemo implements AD {
+public class ADHero extends HeroDemo1 implements AD {
 
     public ADHero(String name, float hp) {
         super(name, hp);

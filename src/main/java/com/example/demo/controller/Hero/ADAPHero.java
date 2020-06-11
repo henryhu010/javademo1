@@ -16,7 +16,7 @@ import com.example.demo.controller.Charactor.AP;
  * @param {type} 
  * @return: 
  */
-public class ADAPHero extends HeroDemo implements AD, AP {
+public class ADAPHero extends HeroDemo1 implements AD, AP {
 
     public ADAPHero(String name, float hp) {
         super(name, hp);

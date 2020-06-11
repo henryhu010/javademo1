@@ -10,7 +10,7 @@ package com.example.demo.controller.Hero;
 
 import com.example.demo.controller.Charactor.AP;
 
-public class APHero extends HeroDemo implements AP {
+public class APHero extends HeroDemo1 implements AP {
 
     public APHero(String name, float hp) {
         super(name, hp);
