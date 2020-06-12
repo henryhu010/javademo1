@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-08 10:21:34
- * @LastEditTime: 2020-06-10 09:26:00
+ * @LastEditTime: 2020-06-12 15:50:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \demo\src\main\java\com\example\demo\controller\CollectionFramework\CollectionTest.java
@@ -17,6 +17,7 @@ public class CollectionTest {
         testAdd();
         testContain();
         testFor();
+        testHashmap();
     }
 
     public static void testAdd() {
@@ -83,7 +84,6 @@ public class CollectionTest {
     public static void testRemove() {
     // 首先初始化一个HeroDemo1集合，里面放100个Hero对象，名称分别从hero0....hero99
     // 通过遍历手段，删除掉编号是8的倍数的对象
-
         List<HeroDemo1> heros = new ArrayList<HeroDemo1>();
         List<Integer> a = new ArrayList<>();
 
@@ -91,7 +91,7 @@ public class CollectionTest {
             heros.add(new HeroDemo1("hero name"+i, i));
         }
         for (int i = 0; i < 100; i++) {
-            HeroDemo1 h=heros.get(i);
+            HeroDemo1 h = heros.get(i);
             if (i%8==0) {
                 a.add(i);
             }
@@ -102,4 +102,24 @@ public class CollectionTest {
         }
         System.out.println(heros.toString());
     }
+
+    public static void testHashmap() {
+        HashMap<String,HeroDemo1> heroMap = new HashMap<String, HeroDemo1>();
+    
+        String heroname = "gareen";
+        
+        heroMap.put(heroname, new HeroDemo1("gareen1", 612));
+        System.out.println(heroMap);
+
+        heroMap.put(heroname, new HeroDemo1("newgareen2", 6120));
+        System.out.println(heroMap);
+
+        heroMap.clear();
+        HeroDemo1 gareen = new HeroDemo1(heroname, 123);
+        
+        heroMap.put("hero1", gareen);
+        heroMap.put("hero2", gareen);
+        System.out.println(heroMap);
+    }
+
 }

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "demo",
+			"path": "."
+		},
+		{
+			"path": "..\\document"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
