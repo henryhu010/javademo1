@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-18 14:35:01
- * @LastEditTime: 2020-06-18 14:59:51
+ * @LastEditTime: 2020-06-20 16:58:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \demo\src\main\java\com\example\demo\controller\CollectionFramework\HashSet.java
@@ -9,7 +9,6 @@
 package com.example.demo.controller.CollectionFramework;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.Iterator;
 import java.util.Random;

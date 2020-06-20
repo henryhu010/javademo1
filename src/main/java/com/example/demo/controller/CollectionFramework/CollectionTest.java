@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-08 10:21:34
- * @LastEditTime: 2020-06-12 15:50:58
+ * @LastEditTime: 2020-06-20 17:16:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \demo\src\main\java\com\example\demo\controller\CollectionFramework\CollectionTest.java
@@ -14,10 +14,12 @@ import com.example.demo.controller.Hero.HeroDemo1;
 public class CollectionTest {
     @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
-        testAdd();
-        testContain();
-        testFor();
-        testHashmap();
+        //testAdd();
+        //testContain();
+        //testFor();
+        //testHashmap();
+        //revHashMap();
+        testLinkHashSet();
     }
 
     public static void testAdd() {
@@ -120,6 +122,30 @@ public class CollectionTest {
         heroMap.put("hero1", gareen);
         heroMap.put("hero2", gareen);
         System.out.println(heroMap);
+    }
+
+    public static void revHashMap() {
+        HashMap<String,String> hmp=new HashMap<>();
+        HashMap<String,String> mmp=new HashMap<>();
+        hmp.put("adc","物理英雄");
+        hmp.put("apc","魔法英雄");
+        hmp.put("t","坦克");
+        Set<String> keys=hmp.keySet();
+        System.out.println(hmp);
+        for (String key:keys){
+            mmp.put(hmp.get(key),key);
+        }
+        System.out.println(mmp);
+    }
+
+    public static void testLinkHashSet() {
+        LinkedHashSet<Integer> set = new LinkedHashSet<>();
+        double pi = Math.PI;
+        while (set.size()<7) {
+            set.add((Integer)(int)pi%10);
+            pi*=10;
+        }
+        System.out.println(set);
     }
 
 }
